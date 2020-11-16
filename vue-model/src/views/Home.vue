@@ -1,18 +1,23 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <button @click="showMask = true">show mask</button>
+    <IMask v-model="showMask"></IMask>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import IMask from "@/components/IMask.vue";
 
 export default {
   name: "Home",
+  data(){
+    return {
+      showMask:false
+    }
+  },
   components: {
-    HelloWorld
-  }
+    IMask,
+  },
 };
 </script>
