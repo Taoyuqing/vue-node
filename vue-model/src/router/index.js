@@ -5,6 +5,7 @@ import Home from "../views/Home.vue";
 Vue.use(VueRouter);
 
 const routes = [
+  // 双向绑定的使用
   {
     path: "/",
     name: "Home",
