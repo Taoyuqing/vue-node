@@ -6,12 +6,13 @@
 
 <script>
 // @ is an alias to /src
-
+import colors from '@/styles/common.scss'
 
 export default {
   name: "Home",
   components: {},
   mounted() {
+    console.log(colors)
   },
   data(){
     return {
