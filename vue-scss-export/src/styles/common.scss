@@ -1,0 +1,9 @@
+@function double($n){
+    @return $n * 2;
+}
+$red:#C03639;
+$gray:gray;
+:export{
+    red:$red;
+    gray:$gray
+}
